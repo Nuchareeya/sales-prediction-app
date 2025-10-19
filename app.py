@@ -8,7 +8,7 @@ st.title("📈 Sales Prediction (Linear Regression)")
 # โหลดโมเดล
 @st.cache_resource
 def load_model():
-    model = joblib.load("model-reg-xxx.pkl")
+    model = joblib.load("model-reg-66130700373.pkl")
     feature_order = ["youtube", "tiktok", "instagram"]
     return model, feature_order
 
@@ -16,7 +16,7 @@ try:
     model, feature_order = load_model()
     st.success("Model loaded successfully.")
 except Exception as e:
-    st.error(f"Cannot load model-reg-xxx.pkl: {e}")
+    st.error(f"Cannot load model-reg-66130700373.pkl: {e}")
     st.stop()
 
 st.markdown("กรอกงบโฆษณาแต่ละช่องทางแล้วคลิก **Predict**")
